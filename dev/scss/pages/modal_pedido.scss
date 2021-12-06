@@ -1,0 +1,99 @@
+.content-pedido{
+    padding-top: 2rem;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    &__header--producto{
+        height:8%;    
+    }
+    &__pedido{
+       height: 50%;
+    }
+    &__header--pedido,&__pedido{ 
+       // border: 1px solid red;
+        display: grid;
+        grid-template-columns:repeat(4,1fr) 120px;   
+        
+    }
+    &__header--text{
+        background-color: rgb(252, 199, 224);
+        min-width: 9vw;
+    }
+    &__header--text,&__user--text{
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+    }
+    &__pedido--options{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    &__pedido{
+        .nombreP{
+            grid-column: 1/2;
+        }
+        .precioP{
+            grid-column: 2/3;
+        }
+        .cantidadP{
+            grid-column: 3/4;
+            input{
+                height: 100%;
+                text-align: center;
+                border: none;
+            }
+        }
+        .totalP{
+            grid-column: 4/5;
+        }
+        &--options{
+            grid-column: 5/-1;
+        }   
+    }
+    overflow-y: auto;
+
+}
+.form__field-pedido{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    // border: 1px solid red;
+    text-align: center;
+    input{
+        margin-top: 2rem;
+    }
+}
+.btn-agregar{
+    background-color: rgb(208, 208, 215);
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 2px 3px rgb(24, 22, 22);
+    cursor: pointer;
+    margin-top: 2.5rem;
+    a{
+        text-decoration: none;
+        color: $text-color;
+        font-family: $main-title;
+        font-weight: $medium-text;
+    }
+    p{  
+        height: 5%;
+        font-family: $main-title;
+        font-weight: $medium-title;
+        color: $text-color;
+        font-size: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

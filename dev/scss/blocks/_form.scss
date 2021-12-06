@@ -1,0 +1,50 @@
+.form__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 90%;
+    width: 95%;
+    // border: 1px solid red;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+    input{
+        padding: 6px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid darkgray;
+        outline: none;
+        text-align: center;
+    }
+    .form__field{
+        // position: relative;
+        margin-bottom: 10%;
+        height: 8%;
+        margin: auto;
+        // border: 1px solid red;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & label{
+            margin-right: 10px;
+        }
+    }
+    .form__field-100{
+        // border: 1px solid red;
+        width: 90%;
+        padding: 20px;    
+        input{
+            width: 80%;
+        }   
+    }
+    .form__field-50{
+        // border: 1px solid red;
+        width: 48%;
+        padding: 20px;
+        input{
+            width: 65%;
+        }
+    }
+}
