@@ -1,2 +1,2 @@
 # Proyecto-TBD
-Sistema de Compra con Oracle
+Proyecto para el Curso Taller De Base De Datos con Oracle
